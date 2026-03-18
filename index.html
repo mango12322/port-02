@@ -6,6 +6,11 @@
     <title>오가닉</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -71,7 +76,96 @@
       </nav>
     </header>
     <div class="container">
-      <div class="contents"></div>
+      <div class="contents">
+        <div class="main-visual">
+          <div class="swiper visual-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-vegetable">
+                <div class="visual-inner">
+                  <div class="visual-text">
+                    <span class="visual-label">CAFE24 FOOD</span>
+                    <h2 class="visual-title">
+                      건강하게 즐기는 <br />
+                      유기농 채소
+                    </h2>
+                    <p class="visual-desc">연말행사 특가 세일 진행중</p>
+                  </div>
+                  <div class="visual-image">
+                    <img src="img/main-01.png" alt="채소" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide-bread">
+                <div class="visual-inner">
+                  <div class="visual-text">
+                    <span class="visual-label">ORGANIC FOOD</span>
+                    <h2 class="visual-title">
+                      신선하게 즐기는 <br />
+                      유기농 빵
+                    </h2>
+                    <p class="visual-desc">오늘만 특별 할인</p>
+                  </div>
+                  <div class="visual-image">
+                    <img src="img/main-02.png" alt="빵" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <section class="new-item">
+          <div class="section-header">
+            <h2 class="section-title">NEW! ARRIVALS</h2>
+            <p class="section-subtitle">언제나 새로운 신상품</p>
+          </div>
+          <div class="product-list">
+            <a class="product-card">
+              <div class="product-image">
+                <span class="product-badge new">NEW</span>
+                <img src="img/new-01.jpg" alt="유기농 달걀" />
+              </div>
+              <div class="product-info">
+                <p class="product-name">유기농 달걀</p>
+                <p class="product-price">6,000원</p>
+              </div>
+            </a>
+            <a class="product-card">
+              <div class="product-image">
+                <span class="product-badge new">NEW</span>
+                <img src="img/new-02.jpg" alt="빵" />
+              </div>
+              <div class="product-info">
+                <p class="product-name">유기농 아침 식빵</p>
+                <p class="product-price">12,000원</p>
+              </div>
+            </a>
+            <a class="product-card">
+              <div class="product-image">
+                <span class="product-badge new">NEW</span>
+                <img src="img/new-03.png" alt="케이크" />
+              </div>
+              <div class="product-info">
+                <p class="product-name">딸기 무스 케이크</p>
+                <p class="product-price">30,000원</p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="on-store"></section>
+        <section class="best-item"></section>
+        <div class="smart-banner"></div>
+        <section class="online-item"></section>
+        <section class="brand-story"></section>
+        <section class="md-item"></section>
+        <section class="event-cupon"></section>
+        <section class="offline-store"></section>
+      </div>
     </div>
+    <footer class="footer"></footer>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
