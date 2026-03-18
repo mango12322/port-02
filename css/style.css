@@ -303,7 +303,8 @@
   overflow: hidden;
   flex: 1;
 }
-.product-badge {
+.product-badge.new,
+.product-badge.best {
   position: absolute;
   top: 0;
   left: 0;
@@ -313,13 +314,16 @@
   padding: 3px 10px;
   border-radius: 3px;
 }
+.product-badge.best {
+  background-color: #99ca3d;
+}
 .product-image img {
   display: block;
   width: 100%;
   height: 350px;
   object-fit: cover;
 }
-.product-info {
+.new-item .product-info {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -330,21 +334,21 @@
   opacity: 0.8;
   transition: transform 0.4s;
 }
-.product-name,
-.product-price {
+.new-item .product-name,
+.new-item .product-price {
   margin-left: 20px;
-  font-size: 14px;
 }
 .product-name {
-  margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 .product-price {
   display: inline-block;
-  font-weight: 900;
-  margin-top: 10px;
+  font-weight: 1000;
+  margin-top: 0;
   pointer-events: none;
 }
-.product-card:hover .product-info {
+.new-item .product-card:hover .product-info {
   transform: translateY(0);
 }
 
@@ -412,7 +416,36 @@
 
 /* best-item */
 .best-item {
-  width: 500px;
-  height: 500px;
+  width: 1300px;
+  margin: auto;
   margin-top: 130px;
 }
+.best-tab {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+.best-tab li a {
+  color: rgb(154, 154, 154);
+  font-size: 18px;
+}
+.best-tab li.active a {
+  color: #333;
+  border-bottom: 2px solid rgb(154, 154, 154);
+  padding-bottom: 5px;
+}
+.best-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.best-product-list .product-card {
+  flex: 0 0 calc(25% - 15px);
+}
+.best-product-list .product-image img {
+  height: 300px;
+}
+
+/* 내일 할 것 */
+/* WISH, ADD 를 Product-card 밑에 span으로 두개 집어넣기 */
