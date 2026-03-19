@@ -317,6 +317,9 @@
 .product-badge.best {
   background-color: #99ca3d;
 }
+.product-image {
+  position: relative;
+}
 .product-image img {
   display: block;
   width: 100%;
@@ -449,3 +452,34 @@
 
 /* 내일 할 것 */
 /* WISH, ADD 를 Product-card 밑에 span으로 두개 집어넣기 */
+.product-wish,
+.product-add {
+  position: absolute;
+  font-size: 13px;
+  background-color: floralwhite;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  opacity: 0;
+  transition: 0.35s;
+  box-shadow: 0 0 2px #222;
+}
+.product-wish {
+  left: 37%;
+}
+.product-add {
+  left: 63%;
+}
+.product-card:hover .product-wish,
+.product-card:hover .product-add {
+  opacity: 0.9;
+}
+.product-add:hover,
+.product-wish:hover {
+  color: #fff;
+  background-color: #222;
+}
