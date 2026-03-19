@@ -75,7 +75,7 @@
 
 /* Header */
 .header {
-  height: 210px;
+  height: 200px;
 }
 
 /* Toparea */
@@ -420,8 +420,7 @@
 /* best-item */
 .best-item {
   width: 1300px;
-  margin: auto;
-  margin-top: 130px;
+  margin: 130px auto;
 }
 .best-tab {
   display: flex;
@@ -449,9 +448,6 @@
 .best-product-list .product-image img {
   height: 300px;
 }
-
-/* 내일 할 것 */
-/* WISH, ADD 를 Product-card 밑에 span으로 두개 집어넣기 */
 .product-wish,
 .product-add {
   position: absolute;
@@ -482,4 +478,49 @@
 .product-wish:hover {
   color: #fff;
   background-color: #222;
+}
+
+/* Promo-banner */
+.promo-inner {
+  width: 1300px;
+  height: 240px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f7f6;
+}
+.promo-text {
+  margin-left: 70px;
+}
+.promo-title {
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.promo-title span {
+  font-weight: bold;
+}
+.promo-link {
+  font-size: 20px;
+  position: relative;
+}
+.promo-link::before {
+  content: "\2192";
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.promo-image {
+  height: inherit;
+  overflow: hidden;
+  margin-right: 150px;
+}
+.promo-image img {
+  display: block;
+  width: 300px;
+  height: inherit;
+  object-fit: cover;
 }
