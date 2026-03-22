@@ -197,6 +197,13 @@
   .swiper-wrapper {
     margin-left: 0 !important;
   }
+  .visual-text,
+  .visual-image {
+    flex: 1 0 auto;
+  }
+  .visual-image img {
+    height: 300px;
+  }
 
   /* new item */
   .new-item {
@@ -204,7 +211,6 @@
     margin-top: 0;
   }
   .new-item .product-list {
-    flex-direction: column;
     margin: 0 15px;
   }
   .new-item .product-info {
@@ -222,7 +228,8 @@
     margin: 50px auto;
   }
   .on-store .swiper-wrapper {
-    margin-left: 15px !important;
+    padding-right: 5px !important;
+    margin-left: 5px !important;
   }
   .store-title {
     font-size: 14px;
@@ -231,7 +238,9 @@
   .store-link {
     font-size: 12px;
   }
-
+  .store-item {
+    flex-shrink: 1 !important;
+  }
   /* best-item */
   .best-item {
     width: 100%;

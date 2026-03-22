@@ -239,7 +239,9 @@
   .store-link {
     font-size: 12px;
   }
-
+  .store-item {
+    flex-shrink: 0 !important;
+  }
   /* best-item */
   .best-item {
     width: 100%;
