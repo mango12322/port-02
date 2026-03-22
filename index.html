@@ -6,6 +6,8 @@
     <title>오가닉</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <!-- Swiper -->
     <link
       rel="stylesheet"
@@ -33,7 +35,7 @@
           <li><a href="#none">주문조회</a></li>
           <li><a href="#none">최근본상품</a></li>
           <li>
-            <a href="#none">고객센터</a>
+            <a href="#none" class="dropdown-toggle">고객센터</a>
             <ul class="dropdown">
               <li><a href="#">공지사항</a></li>
               <li><a href="#">상품 사용후기</a></li>
@@ -157,34 +159,41 @@
             <h2 class="section-title">ON STORE!</h2>
             <p class="section-subtitle">요즘 가장 핫한 상품 온스토어</p>
           </div>
-          <div class="store-list">
-            <a href="#" class="store-item">
-              <div class="store-image">
-                <img src="img/onStore-01.jpg" alt="디저트" />
-              </div>
-              <div class="store-info">
-                <h3 class="store-title">달콤상큼한 디저트를 만나보세요</h3>
-                <p class="store-link">자세히 살펴보기</p>
-              </div>
-            </a>
-            <a href="#" class="store-item">
-              <div class="store-image">
-                <img src="img/onStore-02.jpg" alt="디저트" />
-              </div>
-              <div class="store-info">
-                <h3 class="store-title">AA+ 한우를 집에서 즐기세요</h3>
-                <p class="store-link">자세히 살펴보기</p>
-              </div>
-            </a>
-            <a href="#" class="store-item">
-              <div class="store-image">
-                <img src="img/onStore-03.jpg" alt="디저트" />
-              </div>
-              <div class="store-info">
-                <h3 class="store-title">핫플 카페 빵 지금 주문하면 무료배송</h3>
-                <p class="store-link">자세히 살펴보기</p>
-              </div>
-            </a>
+
+          <div class="store-slider swiper">
+            <div class="swiper-wrapper">
+              <a href="#" class="store-item swiper-slide">
+                <div class="store-image">
+                  <img src="img/onStore-01.jpg" alt="디저트" />
+                </div>
+                <div class="store-info">
+                  <h3 class="store-title">달콤상큼한 디저트를 만나보세요</h3>
+                  <p class="store-link">자세히 살펴보기</p>
+                </div>
+              </a>
+
+              <a href="#" class="store-item swiper-slide">
+                <div class="store-image">
+                  <img src="img/onStore-02.jpg" alt="디저트" />
+                </div>
+                <div class="store-info">
+                  <h3 class="store-title">AA+ 한우를 집에서 즐기세요</h3>
+                  <p class="store-link">자세히 살펴보기</p>
+                </div>
+              </a>
+
+              <a href="#" class="store-item swiper-slide">
+                <div class="store-image">
+                  <img src="img/onStore-03.jpg" alt="디저트" />
+                </div>
+                <div class="store-info">
+                  <h3 class="store-title">
+                    핫플 카페 빵 지금 주문하면 무료배송
+                  </h3>
+                  <p class="store-link">자세히 살펴보기</p>
+                </div>
+              </a>
+            </div>
           </div>
         </section>
         <section class="best-item">
@@ -313,7 +322,7 @@
         <section class="online-only">
           <div class="section-header">
             <h2 class="section-title">ONLY! ON</h2>
-            <p class="section-subtitle">직 온라인에서만 만나보세요</p>
+            <p class="section-subtitle">오직 온라인에서만 만나보세요</p>
           </div>
           <div class="online-product-slider swiper">
             <div class="swiper-wrapper">
