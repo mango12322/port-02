@@ -108,7 +108,7 @@
   .online-next {
     display: none;
   }
-  .swiper-wrapper {
+  .online-only .swiper-wrapper {
     margin-left: 15px !important;
   }
   /* brand-story */
