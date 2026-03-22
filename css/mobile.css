@@ -108,6 +108,9 @@
   .online-next {
     display: none;
   }
+  .swiper-wrapper {
+    margin-left: 15px !important;
+  }
   /* brand-story */
   .vedio {
     width: 95%;
