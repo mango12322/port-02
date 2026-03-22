@@ -47,7 +47,16 @@
         </ul>
       </div>
       <nav class="navbox">
-        <h1 class="logo">Organic</h1>
+        <div class="nav-inner">
+          <button class="menu-btn">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <h1 class="logo">Organic</h1>
+          <button class="search-btn">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+
         <div class="gnb">
           <div class="main-menu">
             <ul>
@@ -77,6 +86,93 @@
         </div>
       </nav>
     </header>
+
+    <!-- 모바일 사이드 메뉴 -->
+    <div class="side-menu">
+      <div class="side-menu-inner">
+        <div class="side-menu-header">
+          <h1 class="logo">Organic</h1>
+          <button class="side-close">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <ul class="side-user">
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">최근본상품</a></li>
+          </ul>
+        </div>
+
+        <ul class="side-nav">
+          <li>
+            <a href="#">NEW</a>
+            <button class="side-btn">
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="side-dropmenu">
+              <li><a href="#">과일/채소</a></li>
+              <li><a href="#">쌀/잡곡/견과</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">BEST</a>
+          </li>
+          <li>
+            <a href="#">SALE</a>
+          </li>
+          <li>
+            <a href="#">EVENT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="side-cs">
+        <a href="#">고객센터</a>
+        <ul class="side-dropmenu">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">상품 사용후기</a></li>
+          <li><a href="#">상품 Q&A</a></li>
+          <li><a href="#">자유게시판</a></li>
+          <li><a href="#">갤러리</a></li>
+        </ul>
+        <button class="side-btn">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <!-- bottom nav -->
+    <nav class="bottom-nav">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined open-side">menu</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined">search</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined">home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined">shopping_bag</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined">person</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="side-overlay"></div>
     <div class="container">
       <div class="contents">
         <div class="main-visual">
@@ -750,6 +846,9 @@
       </div>
     </footer>
 
+    <button id="back-to-top" class="back-to-top">
+      <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Fontawesome -->
