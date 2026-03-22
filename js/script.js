@@ -80,12 +80,13 @@ dropdownToggle.addEventListener("click", () => {
 
 // scroll
 const navbox = document.querySelector(".navbox");
+const initNavTop = navbox.offsetTop;
 const navTop = navbox.offsetTop;
 let lastScrollY = window.scrollY;
 const bottomNav = document.querySelector(".bottom-nav");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= navTop) {
+  if (window.scrollY > initNavTop) {
     navbox.classList.add("fixed");
   } else {
     navbox.classList.remove("fixed");
@@ -131,6 +132,7 @@ overlay.addEventListener("click", () => {
 sideCloseBth.addEventListener("click", () => {
   sideMenu.classList.remove("active");
   overlay.classList.remove("active");
+  document.body.style.overflow = "unset";
 });
 bottomOnBtn.addEventListener("click", () => {
   sideMenu.classList.add("active");
