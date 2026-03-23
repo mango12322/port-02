@@ -205,6 +205,9 @@
   .swiper-wrapper {
     margin-left: 0 !important;
   }
+  .visual-image {
+    display: none;
+  }
 
   /* new item */
   .new-item {
